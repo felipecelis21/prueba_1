@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Kim Ruka</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"> <!-- Mejora 6: Favicon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .carousel-item img {
+            max-height: 400px;  /* Mejora: Carrusel más pequeño */
+            object-fit: cover;
+            width: 100%;
+        }
+        .carousel-caption {
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .card-kimruka {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .card-kimruka:hover {
+            transform: translateY(-5px);
+        }
+        footer img {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Colegio Kim Ruka</a> <img src="img/kim_ruka.jpg"alt="Logo Kim Ruka" style="height: 60px; margin-right: 15px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation"> <!-- Mejora 1: accesibilidad -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Carrusel de aprendizaje personalizado -->
+<div id="aprendizajeCarrusel" class="carousel slide my-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-img-wrapper">
+                <img src="img/img1.jpg" alt="Estudiante usando libro con metodología activa">
+            </div>
+            <div class="carousel-caption">
+                <h5>Metodología Activa</h5>
+                <p>Aprendizaje basado en proyectos y participación activa del estudiante.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+                <img src="img/img2a.webp" alt="Niños utilizando tablets en clase">
+            </div>
+            <div class="carousel-caption">
+                <h5>Uso de Tecnología</h5>
+                <p>Herramientas digitales integradas al proceso educativo.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+                <img src="img/img3.jpg" alt="Estudiantes trabajando en equipo">
+            </div>
+            <div class="carousel-caption">
+                <h5>Trabajo en equipo</h5>
+                <p>El compañerismo como base del crecimiento personal y académico.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#aprendizajeCarrusel" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#aprendizajeCarrusel" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<!-- Introducción -->
+<div class="container my-5">
+    <h1 class="text-center mb-4">Nuestra Misión</h1> <!-- Mejora 3: SEO, título principal como h1 -->
+    <p class="fs-5 text-center"> <!-- Mejora 2: clase correcta -->
+        En el Colegio Kim Ruka, "Casa del Saber", aspiramos a formar personas íntegras, respetuosas de la diversidad cultural y comprometidas con su entorno. Desde kínder hasta cuarto medio, promovemos una educación basada en valores, excelencia académica y el desarrollo integral de nuestros estudiantes.
+    </p>
+</div>
+
+<!-- Cards -->
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card card-kimruka">
+                <img src="img/valores_2.png" class="card-img-top" alt="Imagen sobre valores educativos">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestros Valores</h5>
+                    <p class="card-text">Respetamos, cuidamos y educamos con empatía y responsabilidad.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-kimruka">
+                <img src="img/instalaciones_2.webp" class="card-img-top" alt="Fotografía de instalaciones modernas">
+                <div class="card-body">
+                    <h5 class="card-title">Instalaciones Modernas</h5>
+                    <p class="card-text">Espacios equipados para el desarrollo académico y personal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-kimruka">
+                <img src="img/deportes_2.webp" class="card-img-top" alt="Actividades deportivas y culturales">
+                <div class="card-body">
+                    <h5 class="card-title">Deporte y Cultura</h5>
+                    <p class="card-text">Fomentamos el deporte y la expresión artística para un desarrollo integral.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Formulario de Contacto con validación HTML -->
+<div class="container my-5">
+    <h3>Contáctanos</h3>
+    <form id="contactoFormulario">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required> <!-- Mejora 2 y 5 -->
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required> <!-- Mejora 2 y 5 -->
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta" required></textarea> <!-- Mejora 2 y 5 -->
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-5">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+        <p class="mb-2">© 2025 Colegio Kim Ruka - Carahue</p>
+        <div class="d-flex justify-content-center">
+            <img src="img/kim_ruka.jpg" alt="Logo Kim Ruka" style="height: 60px; margin-right: 15px;">
+            <img src="img/chile_gob.png" alt="Logo Gobierno de Chile" style="height: 60px;">
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript para Validación de Formulario (Mejora 5) -->
+<script>
+document.getElementById('contactoFormulario').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (this.nombre.value && this.correo.value && this.mensaje.value) {
+        alert('¡Gracias por contactarnos! Pronto te responderemos.');
+        this.reset();
+    } else {
+        alert('Por favor completa todos los campos antes de enviar.');
+    }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
