@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body con fondo claro y tipografía moderna */
+body {
+  background-color: #fdfdfd;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Navbar con tono pastel */
+.navbar {
+  background: #7aa3e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffedc2 !important;
+  transform: translateY(-2px);
+}
+/*carousel*/
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px; /* o el alto que te guste */
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+}
+
+.carousel-img-wrapper img {
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  color: #fff;
+  padding: 10px 20px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Cards diseño suave */
+.card-kimruka {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card-kimruka:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.card-kimruka .card-title {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/* Formulario amigable */
+form .form-control {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #7aa3e5;
+  box-shadow: 0 0 5px rgba(122,163,229,0.5);
+}
+
+/* Botón contacto */
+button.btn-primary {
+  background-color: #7aa3e5;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #557fc2;
+  transform: scale(1.05);
+}
+
+/* Footer estilo limpio */
+footer {
+  background: #7aa3e5;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+footer p {
+  margin: 0;
+  color: #f9f9f9;
+}
+
+footer img {
+  border-radius: 10px;
+  filter: grayscale(30%);
+  transition: all 0.3s ease;
+}
+
+footer img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.08);
+}
